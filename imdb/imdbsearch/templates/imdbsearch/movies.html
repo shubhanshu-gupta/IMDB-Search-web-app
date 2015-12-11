@@ -5,11 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IMDb Celeb Search</title>
-    
-  </head>
+    {% load bootstrap3 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+	{% bootstrap_messages %}
+
+	<link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">  
+
+  	 <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
+
+    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+   </head>
 
   <body>
 
+  	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h3 color="ANTIQUEWHITE">IMDB Search</h3> 
+		</div>
+     </div>
+    </nav>
+
+    <br><br>
+	<div class="container"><br>
+
+
+	  <h3><center>Results</center></h3><br>
+
+	   <table class="table" border="1" style="width:100%">
+	    <tr>
+	    	<th>Display Picture</th>
+	        <th>Name</th>
+			<th>Rating</th>
+			<th>Top 3 Reviews</th>
+		</tr>
+		{% for d in finaldata %}
+		<td><center><img src={{ d.poster }}></center></td>
+			<td><a href={{ d.link }}> {{ d.name }} </a> | {{ d.year }} | {{d.runtime}} | {{d.genre}} | {{d.rated}} </td>
+			<td>{{ d.rating }}</td>
+			<td>
+				<b>1.Title of the review</b><br><i>by username</i><br>
+				{{d.review}}
+				<br><b>2.Title of the review</b><br><i>by username</i><br> A lot of people will complain about this film not having enough action or being too introspective or whatever other reason they can think of not to like the film. But the reality is, this is a fantastic movie about survival when there is little to no chance of doing so. In fact, the film speaks about a lot of things.. 
+				<br><b>3.Title of the review</b><br><i>by username</i><br>A lot of people will complain about this film not having enough action or being too introspective or whatever other reason they can think of not to like the film. But the reality is, this is a fantastic movie about survival when there is little to no chance of doing so. In fact, the film speaks about a lot of things...
+			</td>
+		<tr>
+		{% endfor %}
+	</table>
+
+	</div>
+
+<!-- 
   	 <div id="results" class="row" style="margin:20px;visibility:visible;">
         <table style=" width:100%" class="auto-style1">
         {% for d in data %}
@@ -22,7 +82,7 @@
 		{% endfor %}
 		</table>
       </div>
-
+ -->
   </body>
 
  </html>
