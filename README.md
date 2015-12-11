@@ -18,6 +18,22 @@ There are mainly two pages. First page (index.html) is a form to enter the name 
 As soon as the main (home) page loads, it is the index function working there and when the form is submitted /imdbsearch/show URL gets loaded, defined in the urls.py file. 
 
 
+##INSTRUCTIONS
+It briefs the instructions for setting up the project locally.
+I have implemented the project in python language using the django web-framework.
+Following are the instructions to set up the project locally:
+1. Pre-requisites : Python version 2.7/3.4/3.5, Django version 1.9
+2. Download the zip folder (named – “ IMDB-Search-web-app ”) or clone from github (https://github.com/shubhanshu-gupta/IMDB-Search-web-app)
+3. Go to the directory where you have manage.py file (Do C:\Users\Shubhanhu\> cd imdb)
+4. Now, run the server by this command: python manage.py runserver (Write like this: C:\Users\Shubhanhu\> python manage.py runserver)
+5. It will automatically check for errors like indentations, missing data and other problematic things. Once, all sorted out and running: go to the server path http://127.0.0.1:8000/ from any web server (preferably chrome).
+6. The IMDB-Search-web-app is fired to life.
+ 
+
+
+
+
+
 
 
 
