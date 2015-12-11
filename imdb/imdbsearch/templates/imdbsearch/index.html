@@ -5,13 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IMDb Celeb Search</title>
-<!--     {% load bootstrap3 %}
+    {% load bootstrap3 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
-	{% bootstrap_messages %} -->
-  </head>
+	{% bootstrap_messages %}
+  
+
+  	 <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
+
+    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+   </head>
 
   <body>
+
+  	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          IMDB Search 
+          </div>
+          </div>
+          </nav>
+
+      <div class="container">
+
+      <div class="starter-template">
+
 <!--   <form action="/celeb-name/" method="post">
   		<label for="celeb_name">Celebrity Name: </label>
   		<input id="celeb_name" type="text" name="celeb_name" value="{{ current_name }}">
@@ -28,13 +59,28 @@
   {% endbuttons %}
 	</form>   -->
 
-	<form action="/imdbsearch/show/" method="post">
+<!-- 	<form action="/imdbsearch/show/" method="post">
     {% csrf_token %}
     {{ form }}
     <input type="submit" value="Submit" />
-	</form>	
+	</form>	 -->
 
+	<form action="/imdbsearch/show/" method="post">
+	{% csrf_token %}
+	{% bootstrap_form form  %}
+	<button type="submit" value="Submit" class="btn btn-primary">{% bootstrap_icon "ok" %} Submit </button>
+	</form>
 	<!-- <div>You searched for: {{ query }} </div> -->
   
+  </div>
+  </div>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
