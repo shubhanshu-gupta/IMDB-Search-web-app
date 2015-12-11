@@ -17,6 +17,11 @@ There are mainly two pages. First page (index.html) is a form to enter the name 
 
 As soon as the main (home) page loads, it is the index function working there and when the form is submitted /imdbsearch/show URL gets loaded, defined in the urls.py file. 
 
+##IMDB-Search.py
+This python script is the one used in the views.py file of the web app. The script is a combination of crawling (for purposes like fetching reviews, best known movies of the celebrity, etc) and making use of the OMDB API (for fetching all the related movie information)
+
+##SearchByCelebrityName.py
+This python script was earlier used in the views.py file of the app. This script was providing all the requirements of the project, entirely by crawling the IMDb website. Though there is no flaw with the script nor with the logic of crawling used in it, but due to some restrictions by IMDb and their security features, the crawling could not last long. 
 
 ##INSTRUCTIONS
 It briefs the instructions for setting up the project locally.
