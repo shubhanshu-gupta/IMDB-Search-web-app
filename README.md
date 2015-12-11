@@ -30,6 +30,17 @@ Following are the instructions to set up the project locally:
 6. The IMDB-Search-web-app is fired to life.
  
 
+##REFERENCES
+It briefs the external libraries/open source projects that helped me build this project.
+1. Twitter Bootstrap (Directly used from the source: http://getbootstrap.com/)
+2. Bootstrap3 for Django (https://github.com/dyve/django-bootstrap3)
+3. OMDB API (http://www.omdbapi.com/)
+4. BeautifulSoup for parsing and Mechanize for browser calls
+5. Django templating language
+
+
+
+
 
 
 
