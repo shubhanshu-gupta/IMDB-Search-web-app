@@ -22,21 +22,21 @@ As soon as the main (home) page loads, it is the index function working there an
 It briefs the instructions for setting up the project locally.
 I have implemented the project in python language using the django web-framework.
 Following are the instructions to set up the project locally:
-1. Pre-requisites : Python version 2.7/3.4/3.5, Django version 1.9
-2. Download the zip folder (named – “ IMDB-Search-web-app ”) or clone from github (https://github.com/shubhanshu-gupta/IMDB-Search-web-app)
-3. Go to the directory where you have manage.py file (Do C:\Users\Shubhanhu\> cd imdb)
-4. Now, run the server by this command: python manage.py runserver (Write like this: C:\Users\Shubhanhu\> python manage.py runserver)
-5. It will automatically check for errors like indentations, missing data and other problematic things. Once, all sorted out and running: go to the server path http://127.0.0.1:8000/ from any web server (preferably chrome).
-6. The IMDB-Search-web-app is fired to life.
+* Pre-requisites : Python version 2.7/3.4/3.5, Django version 1.9
+* Download the zip folder (named – “ IMDB-Search-web-app ”) or clone from github (https://github.com/shubhanshu-gupta/IMDB-Search-web-app)
+* Go to the directory where you have manage.py file (Do C:\Users\Shubhanhu\> cd imdb)
+* Now, run the server by this command: python manage.py runserver (Write like this: C:\Users\Shubhanhu\> python manage.py runserver)
+* It will automatically check for errors like indentations, missing data and other problematic things. Once, all sorted out and running: go to the server path http://127.0.0.1:8000/ from any web server (preferably chrome).
+* The IMDB-Search-web-app is fired to life.
  
 
 ##REFERENCES
 It briefs the external libraries/open source projects that helped me build this project.
-1. Twitter Bootstrap (Directly used from the source: http://getbootstrap.com/)
-2. Bootstrap3 for Django (https://github.com/dyve/django-bootstrap3)
-3. OMDB API (http://www.omdbapi.com/)
-4. BeautifulSoup for parsing and Mechanize for browser calls
-5. Django templating language
+* Twitter Bootstrap (Directly used from the source: http://getbootstrap.com/)
+* Bootstrap3 for Django (https://github.com/dyve/django-bootstrap3)
+* OMDB API (http://www.omdbapi.com/)
+* BeautifulSoup for parsing and Mechanize for browser calls
+* Django templating language
 
 
 
