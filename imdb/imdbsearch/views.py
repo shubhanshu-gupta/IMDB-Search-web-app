@@ -32,3 +32,8 @@ def index(request):
 	# 	form = NameForm()
 
 	# return render(request, 'index.html', {'form': form})
+
+def show(request):
+	print "sdgfds"
+	celeb = request.POST['celeb_name']
+	print celeb

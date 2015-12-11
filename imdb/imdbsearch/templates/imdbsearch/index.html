@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IMDb Celeb Search</title>
-    {% load bootstrap3 %}
+<!--     {% load bootstrap3 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
-	{% bootstrap_messages %}
+	{% bootstrap_messages %} -->
   </head>
 
   <body>
@@ -28,13 +28,13 @@
   {% endbuttons %}
 	</form>   -->
 
-	<!-- <form action="/result/" method="post">
+	<form action="/imdbsearch/show/" method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    {{ form }}
     <input type="submit" value="Submit" />
-	</form>	 -->
+	</form>	
 
-	<div>You searched for: {{ query }} </div>
+	<!-- <div>You searched for: {{ query }} </div> -->
   
   </body>
 </html>
