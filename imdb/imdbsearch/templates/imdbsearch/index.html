@@ -28,11 +28,13 @@
   {% endbuttons %}
 	</form>   -->
 
-	<form action="/result/" method="post">
+	<!-- <form action="/result/" method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Submit" />
-	</form>	
+	</form>	 -->
+
+	<div>You searched for: {{ query }} </div>
   
   </body>
 </html>
