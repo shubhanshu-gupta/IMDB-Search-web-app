@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IMDb Celeb Search</title>
+    
+  </head>
+
+  <body>
+
+  	 <div id="results" class="row" style="margin:20px;visibility:visible;">
+        <table style=" width:100%" class="auto-style1">
+        {% for d in data %}
+		<tr id="tr-1">
+			<td id="tr-1-movie" class="auto-style2">{{ d.name }}</td>
+			<td id="tr-1-details" class="auto-style2">{{ d.description}}</td>
+			<td id="tr-1-reviews" class="auto-style2">{{ d.review}}</td>
+			<td id="tr-1-rating" class="auto-style2"> {{d.rated}}  </td>
+		</tr>
+		{% endfor %}
+		</table>
+      </div>
+
+  </body>
+
+ </html>
